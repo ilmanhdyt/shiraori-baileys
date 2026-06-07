@@ -1,0 +1,53 @@
+{
+  "name": "shiraori-baileys",
+  "version": "1.0.0",
+  "description": "Production-ready Baileys fork with interactive messages, anti bad-session, fast mode, and modern WhatsApp features.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": ["lib", "index.d.ts", "README.md"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepack": "npm run build",
+    "test": "jest"
+  },
+  "keywords": [
+    "whatsapp",
+    "baileys",
+    "shiraori",
+    "bot",
+    "interactive",
+    "carousel",
+    "list",
+    "native-flow"
+  ],
+  "author": "ilmanhdyt",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.0",
+    "@whiskeysockets/baileys": "^6.7.0",
+    "async-lock": "^1.4.0",
+    "axios": "^1.0.0",
+    "jimp": "^1.6.0",
+    "keyv": "^4.5.2",
+    "libsignal": "^6.0.0",
+    "link-preview-js": "^3.0.4",
+    "lodash": "^4.17.21",
+    "music-metadata": "^8.1.0",
+    "node-cache": "^5.1.2",
+    "p-queue": "^7.3.4",
+    "pino": "^8.4.0",
+    "sharp": "^0.31.0",
+    "uuid": "^9.0.0",
+    "ws": "^8.11.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.191",
+    "@types/node": "^18.0.0",
+    "@types/uuid": "^9.0.0",
+    "@types/ws": "^8.5.3",
+    "typescript": "^5.0.0"
+  }
+}
